@@ -5,10 +5,9 @@
  * @returns {number} Summen af de to tal.
  */
 export function calculateSum(a, b) {
-    // Skriv din kode her:
-
-
-
+  // Skriv din kode her:
+  //ez
+  return a + b;
 }
 
 /**
@@ -17,10 +16,13 @@ export function calculateSum(a, b) {
  * @returns {boolean} True hvis tallet er et primtal, ellers false.
  */
 export function checkIfPrime(number) {
-    // Skriv din kode her:
-
-
-
+  // Skriv din kode her:
+  //MATH.
+  if (number <= 1) return false;
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) return false;
+  }
+  return true;
 }
 
 /**
@@ -29,10 +31,9 @@ export function checkIfPrime(number) {
  * @returns {number} Det største tal i listen.
  */
 export function findMaximumNumber(array) {
-    // Skriv din kode her:
-
-
-
+  // Skriv din kode her:
+  //ez
+  return Math.max(...array);
 }
 
 /**
@@ -41,8 +42,7 @@ export function findMaximumNumber(array) {
  * @returns {any[]} Listen uden dubletter.
  */
 export function removeDuplicateElements(array) {
-    // Skriv din kode her:
-
-
-
+  // Skriv din kode her:
+  //ez
+  return [...new Set(array)];
 }
