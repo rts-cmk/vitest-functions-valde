@@ -48,9 +48,13 @@ describe("flattenArray", () => {
 // Doesnt work, can be fixed, but teacher said not to fix anything right now.
 describe("groupBy", () => {
   it("should receive an array and a callback, and return an object grouped by the callback's return values", () => {
+    // first we create an array of numbers
     const array = [6.1, 4.2, 6.3, 8.2, 4.4, 8.4];
-    const property = Math.floor;
-    const result = groupBy(array, property);
+    // then we define the property to group by
+    const callback = Math.floor;
+    // we call the groupBy function with the array and callback
+    const result = groupBy(array, callback);
+    // we expect the result to be an object grouped by the floored values
     expect(result).toEqual({
       4: [4.2, 4.4],
       6: [6.1, 6.3],
